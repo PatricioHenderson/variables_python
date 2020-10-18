@@ -27,13 +27,31 @@ def ej1():
     - Multiplicación
     - División
     - Exponente/Potencia
-
+    
     - Para todos los casos se debe imprimir en pantalla el resultado aclarando
       la operación realizada en cada caso y con que números
       se ha realizado la operación
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    #Solicitamos se ingresen numeros de tipo float
+    print("Ingrese el primer numero")
+    numero_1= float(input())
+    print("Ingrese el segundo numero")
+    numero_2= float(input())
+    #Realizamos todas las operaciones solicitadas
+    suma= numero_1 + numero_2
+    resta= numero_1 - numero_2
+    multiplicacion= numero_1 * numero_2
+    división= numero_1 % numero_2
+    potencia= numero_1 ** numero_2
+    #Imprimimos los resultados
+    print("El resultado de la suma entre ", numero_1, "y ", numero_2, "es", suma,
+    "El resultado de la resta entre ", numero_1, "y ", numero_2, "es", resta,
+    "El resultado de la multiplicacion entre ", numero_1, "y ", numero_2, "es", multiplicacion,
+    "El resultado de la division entre ", numero_1, "y ", numero_2, "es", división,
+    "El resultado de la exponencial entre ", numero_1, "y ", numero_2, "es", potencia)
+
 
 
 def ej2():
@@ -55,7 +73,16 @@ def ej2():
       entienda de que se está hablando.
 
     '''
-
+    print("Introducir nombre y apellido: ")
+    nombre_completo= str(input())
+    print("Introducir numero de DNI: ")
+    dni= int(input())
+    print("Introduce tu edad: ")
+    edad= int(input())
+    print("Introdcir altura en metros: ")
+    altura=float(input())
+    print("Nombre: " , nombre_completo, "DNI: ", dni)
+    print("Nombre: ", nombre_completo, "Edad :", edad, "Altura: ", altura)
 
 def ej3():
     print('Ejercicios de práctica con cadenas')
@@ -90,6 +117,13 @@ def ej3():
 
     '''
 
+    padre_1=str(input("Introducir nombre padre: "))
+    padre_2=str(input("Introducir nombre 2 padre: "))
+    hijo1=str(input("Introducir nombre hijo: "))
+    nombre1, apellido1=padre_1.split(" ")
+    nombre2, apellido2=padre_2.split(" ")
+    
+    print("El nombre es: ", hijo1 , apellido1, apellido2)
 
 def ej4():
     # Ejercicios de práctica con cadenas
@@ -123,8 +157,12 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
-
-
+    persona_1= str(input("Introducir nombre primera persona: "))
+    persona_2= str(input("Introducir nombre segunda persona: "))
+    nombre, apellido1= persona_2.split(" ")
+    parentesco= apellido1 in persona_1
+    print(persona_1, "tiene parentezco con: ",persona_2,parentesco)
+    
 def ej5():
     # Ejercicios de práctica con cadenas
     print('Ahora si! buena suerte!')
@@ -149,12 +187,13 @@ def ej5():
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
-
+    nombre=str(input("Introducir nombre: "))
+    print(nombre.lower(), nombre.upper(), nombre.capitalize())
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+    #ej1()
+    #ej2()
+    #ej3()
+    #ej4()
+    #ej5()
