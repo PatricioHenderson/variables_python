@@ -46,10 +46,10 @@ def ej1():
     división= numero_1 % numero_2
     potencia= numero_1 ** numero_2
     #Imprimimos los resultados
-    print("El resultado de la suma entre ", numero_1, "y ", numero_2, "es", suma,
-    "El resultado de la resta entre ", numero_1, "y ", numero_2, "es", resta,
-    "El resultado de la multiplicacion entre ", numero_1, "y ", numero_2, "es", multiplicacion,
-    "El resultado de la division entre ", numero_1, "y ", numero_2, "es", división,
+    print("El resultado de la suma entre ", numero_1, "y ", numero_2, "es", suma,"\n"
+    "El resultado de la resta entre ", numero_1, "y ", numero_2, "es", resta, "\n"
+    "El resultado de la multiplicacion entre ", numero_1, "y ", numero_2, "es", multiplicacion,"\n"
+    "El resultado de la division entre ", numero_1, "y ", numero_2, "es", división,"\n"
     "El resultado de la exponencial entre ", numero_1, "y ", numero_2, "es", potencia)
 
 
@@ -81,8 +81,8 @@ def ej2():
     edad= int(input())
     print("Introdcir altura en metros: ")
     altura=float(input())
-    print("Nombre: " , nombre_completo, "DNI: ", dni)
-    print("Nombre: ", nombre_completo, "Edad :", edad, "Altura: ", altura)
+    print("Nombre: " , nombre_completo, "DNI: ", dni, "\n"
+    "Nombre: ", nombre_completo, "Edad :", edad, "Altura: ", altura)
 
 def ej3():
     print('Ejercicios de práctica con cadenas')
@@ -192,8 +192,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    #ej1()
-    #ej2()
-    #ej3()
-    #ej4()
-    #ej5()
+    ej1()
+    ej2()
+    ej3()
+    ej4()
+    ej5()

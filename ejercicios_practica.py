@@ -60,9 +60,9 @@ def ej2():
     division= numero_1 % numero_2
     multipicacion= numero_1 * numero_2
 
-    print("El resultado de sumar", numero_1, "y", numero_2, "es", suma,\
-    "El resultado de restar", numero_1, "y", numero_2, "es", resta,\
-    "El resultado de dividir", numero_1, "y", numero_2, "es", division,\
+    print("El resultado de sumar", numero_1, "y", numero_2, "es", suma,"\n"
+    "El resultado de restar", numero_1, "y", numero_2, "es", resta, "\n"
+    "El resultado de dividir", numero_1, "y", numero_2, "es", division,"\n"
     "El resultado de multiplicar", numero_1, "y", numero_2, "es", multipicacion)
     # numero_1, numero_2
     # Imprima en pantalla todos los resultados con el siguiente formato de ejemplo:
